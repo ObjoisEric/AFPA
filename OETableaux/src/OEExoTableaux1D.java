@@ -48,7 +48,6 @@ public class OEExoTableaux1D {
 
 			}
 		}
-
 		System.out.println();
 		System.out.println("i : " + i);
 
@@ -64,7 +63,7 @@ public class OEExoTableaux1D {
 
 			}
 		}
-		
+
 		for ( i = 0; i < matiere.length; i++) {
 
 			if (i == (matiere.length-1)) {
@@ -77,53 +76,92 @@ public class OEExoTableaux1D {
 
 			}
 		}
-		
-		
+
+
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Saisir la taille du tableau : ");
+		System.out.print("Saisir la matière à rechercher : ");
+		String rechercheUser = sc.nextLine();
+
+		for ( i = 0; i < matiere.length; i++) {
+
+			if (rechercheUser.equals(matiere[i])) {
+
+				System.out.println("La valeur " + rechercheUser + " se trouve à l'indice " + i );
+
+			}else {
+
+				System.out.println("la valeur " + rechercheUser +" est différente de la valeur présente dans le tableau à l'indice " + i );
+
+			}
+		}
+
+		boolean existe = false;
+		int indiceRecherche = 0;
+		System.out.println();
+		System.out.println("Affichage via boolean");
+		System.out.println();
+		for ( i = 0; i < matiere.length; i++) {
+
+			if (rechercheUser.equals(matiere[i])) {
+
+				existe = true;
+				indiceRecherche = i;
+
+			}
+		}
+
+		if (existe) {
+
+			System.out.println("La valeur " + rechercheUser + " se trouve à l'indice " + indiceRecherche );
+
+		}else {
+
+			System.out.println("La valeur " + rechercheUser + " ne se trouve pas dans le tableau");
+
+		}
+
+		System.out.println();
+		System.out.print("Saisir la taille du tableau : ");
 		int tailleTableau = sc.nextInt();
 		sc.nextLine();
-		
+
 		System.out.println("La taille du tableau est de " + tailleTableau);
-		
+
 		String [] tableauUser = new String[tailleTableau]; 
 
-		for (int j = 0; j < tableauUser.length; j++) {
-			
-			
-			System.out.println("Saisissez la donnée "+ (j+1) +" : ");
+		for (int j = 0; j < tableauUser.length; j++) {			
+
+			System.out.print("Saisissez la donnée "+ (j+1) +" : ");
 			tableauUser[j] = sc.nextLine();			
-			
-			
+
 		}
 
-		
 		for (int j = 0; j < tableauUser.length; j++) {
-			
+
 			System.out.println("la donnée "+ (j+1)+" est "+ tableauUser[j]);
-			
+
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		sc.close();
 	}
 
