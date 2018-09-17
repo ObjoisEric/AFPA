@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class ExoVariables {
+	
+	public static void main(String[] args) {
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		//ouvrir la permission pour saisir utilisateur
+		Scanner sc = new Scanner(System.in);
+		
+	
+	
+		System.out.println("note");
+		//sc.nextFloat(); permet de saisir un float
+		float note = sc.nextFloat();
+		System.out.println("coef");
+		//sc.nextInt(); permet de saisir un int
+		int coef = sc.nextInt();
+		
+		float resultat;
+	
+		resultat = (note * coef);
+	
+	
+		
+		
+		System.out.println("note * coef = " + resultat);
+	
+	
+	sc.close();
+		
+	
+	}
+}

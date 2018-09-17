@@ -1,0 +1,20 @@
+
+public class ExoConditionIfElse {
+
+	public static void main(String[] args) {
+	
+		String status = "connexion";
+		
+		if (status == "connexion") {
+			
+			System.out.println("Vous êtes bien connectés");
+			
+		}else {
+			
+			System.out.println("Vous n'êtes pas conectés");
+			
+		}
+
+	}
+
+}

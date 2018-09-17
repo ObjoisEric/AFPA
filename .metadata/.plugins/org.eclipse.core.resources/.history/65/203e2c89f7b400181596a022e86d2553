@@ -1,0 +1,23 @@
+public class PremiereClasse {
+
+	public static void main(String[] args) {
+		// Affiche une chaine de caratères
+		System.out.println("Bonjour");
+		System.out.println("Bonsoir");		
+		
+		
+		//afficher un nombre entier
+		System.out.println(12);
+		
+		//afficher un nombre avec une ,
+		System.out.println(12.2);
+		
+		System.out.println('a');
+		
+		
+		
+		
+		
+	}
+
+}

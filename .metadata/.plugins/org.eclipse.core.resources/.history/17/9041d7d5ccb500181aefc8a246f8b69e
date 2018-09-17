@@ -1,0 +1,112 @@
+
+public class ExoConditionIf {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Les conditions IF
+		 * if(condition){
+		 * 		traitement;
+		 * }
+		 */
+		
+		
+		
+		
+		float note = 15;
+		int coef = 3;
+		float resultat = note * coef;
+		
+		if (resultat >= 50) {
+			
+			System.out.println("Resultat est sup ou égal : "+ resultat);
+			
+		}
+		
+		if (resultat <50) {
+		
+			System.out.println("Resultat insufisant ");
+		}
+		
+		float noteJava = 10.5f ; 
+		float noteHtml = 13.5f ; 
+		float noteJavascript = 9.5f ; 
+		float noteCss = 8.5f ;
+		float moyenne;
+		
+		moyenne = (noteJava + noteHtml + noteJavascript + noteCss) / 4; 
+		
+		if (moyenne >= 10) {
+			
+			System.out.println("Vous avez eu une bonne note ");
+			
+		}
+		if (moyenne < 10) {
+			
+			System.out.println("Vous avez eu une mauvaise note ");
+			
+		}
+		
+		int note2 = 10;
+		if (note2 >= 10) {
+			
+			System.out.println("Vous avez eu une bonne note ");
+			
+		}else {
+			
+			System.out.println("Vous avez eu une mauvaise note ");
+			
+		}
+		
+		
+		int coefJava = 3 ; 
+		int coefHtml = 2; 
+		int coefJavascript = 3 ; 
+		int coefCSs = 1;
+		
+		moyenne = ((noteJava * coefJava ) 
+				+ (noteHtml * coefHtml) 
+				+ (noteJavascript * coefJavascript) 
+				+ (noteCss * coefCSs)) 
+					/ (coefJava + coefHtml + coefJavascript + coefCSs);
+		
+		
+		System.out.println("La moyenne : " + moyenne);
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

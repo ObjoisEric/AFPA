@@ -1,0 +1,14 @@
+
+public class OpTernaireCondition {
+
+	public static void main(String[] args) {
+		int entier = 10 ;
+		
+		if (entier == 10) {
+			System.out.println("l'entier est = 10");
+			
+		}
+
+	}
+
+}

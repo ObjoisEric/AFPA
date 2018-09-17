@@ -1,0 +1,25 @@
+
+public class IfCondition {
+
+	public static void main(String[] args) {
+		
+		// = : Affectation
+		// == : comparaison
+		//
+		
+		int prix = 12;
+		
+		if (prix == 10) {
+			System.out.println("la condition est vraie");
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+	}
+
+}

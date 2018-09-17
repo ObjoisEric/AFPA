@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class OEExolectureClavier {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int debut = sc.nextInt();
+		int fin = sc.nextInt(); 
+
+		while (debut != fin) {
+			
+			if (debut > fin ) {
+				
+				debut-- ;				
+			}else {
+				debut++;
+			}
+				
+			System.out.println(debut +" != " + fin);
+		}
+		
+		System.out.println(debut +" = " + fin);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

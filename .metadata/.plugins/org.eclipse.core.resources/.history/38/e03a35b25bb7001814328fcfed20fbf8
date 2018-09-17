@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class OEExolectureClavier {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int debut;
+		int fin; 
+		boolean exit = false;
+		String caractere;
+
+		do {
+
+			debut = sc.nextInt();
+			fin = sc.nextInt();
+			
+			
+			
+			while (debut != fin) {
+
+				if (debut > fin ) {
+
+					debut-- ;				
+				}else {
+					debut++;
+				}
+
+				System.out.println(debut +" != " + fin);
+			}
+
+			System.out.println(debut +" = " + fin);
+
+			System.out.println("Sortir ?(Y)");
+			caractere = sc.nextline();
+			if (caractere == "Y") {
+				exit = true;
+			}
+			
+
+
+
+		}while (exit != true);
+
+
+
+
+
+
+
+
+
+
+
+
+
+			sc.close();
+	}
+
+}

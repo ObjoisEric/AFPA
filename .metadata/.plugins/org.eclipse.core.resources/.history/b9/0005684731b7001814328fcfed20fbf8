@@ -1,0 +1,66 @@
+
+public class OEExoWhileBoucle {
+
+	public static void main(String[] args) {
+		int b = 1;
+
+
+		while ( b <= 100) {
+
+			System.out.println("b : " +b);
+			b++;			
+
+		}
+
+		System.out.println("intermission b : " +b);
+
+
+		while ( b >= 1) {
+
+			System.out.println("b desc : " +b);
+			b--;
+
+		}
+
+		System.out.println("intermission b : " +b);
+
+		int pair = 2;		
+		int chiffre = 1;
+
+		while (chiffre <= 100){				
+
+			if (chiffre == pair) {
+				System.out.println("chiffre pair: " + chiffre);
+				pair = pair + 2 ;				
+			}			
+			chiffre++;			
+
+		}
+
+		while (chiffre >= 1){				
+
+			if (chiffre == pair) {
+				System.out.println("chiffre pair: " + chiffre);
+				pair = pair - 2 ;				
+			}			
+			chiffre--;	
+		}	
+		
+		int chiffre1 = 1;
+		int chiffre2 = 100;
+		
+		while (chiffre1 <=100 && chiffre2 >=1){
+			
+			System.out.println("chiffre1 " + chiffre1);
+			System.out.println("chiffre2 " + chiffre2);
+			chiffre1++;
+			chiffre2--;
+		}
+
+
+
+
+
+
+	}
+}

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class OELectureClavier {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);		
+		System.out.println("DEBUT");
+		String chaine = sc.nextLine();
+		if(chaine.equals("bonjour")) {
+		System.out.println("vous avez saisi : " + chaine);
+		}
+		System.out.println("FIN");
+	}
+	
+	sc.close;
+
+}

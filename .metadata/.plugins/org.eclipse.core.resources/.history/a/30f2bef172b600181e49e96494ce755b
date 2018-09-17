@@ -1,0 +1,75 @@
+
+public class ExoIfElseIfElseConditionOE {
+
+	public static void main(String[] args) {
+
+		/* 				note	coef
+		 * java			14		3
+		 * html			13		2
+		 * javascript	9		3	
+		 * css			7,5		1		
+		 *
+		 *moyenne	>	18	TB
+		 *			>	15	b
+		 *			>	12	Assez bien
+		 *			>	10	moyen
+		 *			>	8	peux fair emieux
+		 *			>	5	plus de travail
+		 *					année prochaine
+		 */
+	
+		double noteJava = 14;
+		double noteHtml = 13;
+		double noteJavascript = 9;
+		double noteCss = 7.5;
+		double moyenne;
+		
+		int coefJava = 3;
+		int coefHtml = 2;
+		int coefJavascript = 3;
+		int coefCss = 1;
+		int sommeCoef;
+		
+		
+		sommeCoef = coefJava + coefHtml + coefJavascript + coefCss;
+		
+		moyenne = noteJava * coefJava;
+		moyenne = moyenne + noteHtml*coefHtml;
+		moyenne = moyenne + noteJavascript * coefJavascript;
+		moyenne = moyenne + noteCss * coefCss;
+		moyenne = moyenne / sommeCoef;
+
+		
+		System.out.println("La note est de : " + moyenne);
+		
+		
+		if (moyenne > 18) {
+			
+			System.out.println("Très Bien");	
+			}else if (moyenne > 15) {
+				
+				System.out.println("Bien");			
+				}else if (moyenne > 12) {
+					
+					System.out.println("Assez Bien");
+			
+					}else if (moyenne > 10) {
+						
+						System.out.println("Moyen");
+			
+						}else if (moyenne > 8) {
+							
+							System.out.println("Il peut mieux faire");
+			
+							}else if (moyenne > 5) {
+								
+								System.out.println("il faut plus de travail");
+			
+								}else {
+									
+									System.out.println("A l’année prochaine, même heure, même endroit");
+			
+		}
+	}
+
+}

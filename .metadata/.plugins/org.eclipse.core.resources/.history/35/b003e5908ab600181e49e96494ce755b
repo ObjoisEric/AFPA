@@ -1,0 +1,29 @@
+
+public class OperateurLogiqueOE {
+
+	public static void main(String[] args) {
+		
+		/*2 var noteJava et noteHtml
+		 * si note java >10 ET noteHtml >10
+		 * Afficher bravo
+		 */
+
+		double noteJava = 8;
+		double noteHtml = 19;
+		
+		boolean noteJavaSup = noteJava > 10 ;
+		System.out.println(noteJavaSup);
+		
+		/*boolean noteHtmlSup = noteHtml > 10 ;
+		System.out.println("noteHtml = " + noteHtmlSup);
+		
+		if (noteJavaSup &&  noteHtmlSup) {
+			
+			System.out.println("Bravo");
+			
+		}else {
+			System.out.println("Au moins une de vos conditions est fausse");
+		}*/
+	}
+
+}

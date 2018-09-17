@@ -1,0 +1,11 @@
+public class PremiereClasse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Bonjour");
+		System.out.println("Bonsoir");		
+		
+		system.out.println("erreur");
+	}
+
+}

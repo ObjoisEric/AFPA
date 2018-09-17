@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1536575029427_0" label="Java Main Sources" name="main">
+<item elementID="=Boucles/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Conditions/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=LesVariables/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OEBoucle/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OEConditions/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OETableaux/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OEVariables/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Tableaux/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1536575029443_1" label="Java Test Sources" name="test"/>
+<workingSet editPageId="org.eclipse.wst.jsdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1536848631132_3" label="github" name="github">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Conditions" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/LesVariables" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tableaux" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Boucles" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/afpa" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1536848670616_5" label="OE" name="OE">
+<item elementID="=OETableaux" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OEConditions" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OEVariables" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OEBoucle" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1536575032205_2" label="Window Working Set" name="Aggregate for window 1536575032205"/>
+<mruList name="github"/>
+</workingSetManager>

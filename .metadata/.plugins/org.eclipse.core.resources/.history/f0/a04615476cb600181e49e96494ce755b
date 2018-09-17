@@ -1,0 +1,87 @@
+
+public class IfElseIfElseCondition {
+	public static void main(String[] args) {
+	
+		/* 		note	coef
+		 * java   14 	 3
+		 * html   13	 2
+		 * javascript	9	3
+		 * css	7;5	1		
+		 *
+		 *mouyenn > 18 TB
+		 *>15	b
+		 *>12	Assez bien
+		 *>10 moyen
+		 *>8 peux fair emieux
+		 *>5
+		 *année prochaine
+		 *
+		 */
+	
+		double noteJava = 14;
+		double noteHtml = 13;
+		double noteJavascript = 9;
+		double noteCss = 7.5;
+		double moyenne;
+		
+		int coefJava = 3;
+		int coefHtml = 2;
+		int coefJavascript = 2;
+		int coefCss = 1;
+		int sommeCoef;
+		
+		
+		sommeCoef=coefJava+coefHtml+coefJavascript+coefCss;
+		
+		moyenne = noteJava * coefJava;
+		moyenne = moyenne + noteHtml*coefHtml;
+		moyenne = moyenne + noteJavascript * coefJavascript;
+		moyenne = moyenne + noteCss * coefCss;
+		moyenne = moyenne / sommeCoef;
+
+;		moyenne = Math.round(moyenne);
+		System.out.println(moyenne);
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+}

@@ -1,0 +1,19 @@
+
+public class OEExoForBoucle {
+
+	public static void main(String[] args) {
+		
+		
+		
+		for (int chiffre = 1;chiffre <= 100;chiffre++) {
+			if (chiffre%2 != 0) {
+				System.out.println("chiffre impair: " + chiffre);
+								
+			}			
+					
+
+		}
+
+	}
+
+}

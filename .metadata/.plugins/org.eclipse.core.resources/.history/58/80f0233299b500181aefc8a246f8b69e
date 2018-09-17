@@ -1,0 +1,35 @@
+
+public class ExoVariables {
+	
+	public static void main(String[] args) {
+	
+		float note = 14.5f;
+		int coef = 3;
+		float resultat;
+
+		
+
+		resultat = (note * coef);
+		System.out.println("note * coef = " + resultat);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+}

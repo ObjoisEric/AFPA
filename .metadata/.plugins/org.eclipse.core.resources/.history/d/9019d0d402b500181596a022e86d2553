@@ -1,0 +1,32 @@
+
+public class TypesVariables {
+
+	public static void main(String[] args) {
+		
+		//Declaration variables	
+		int entier = 14 ;		
+		
+		//Afficher la var entier
+		System.out.println("La variable entier = " + entier);
+		
+		float decimal = 12.5f;
+		System.out.println("La variable decimal = " + decimal);
+		
+		double decimalDoublePrec= 15.5;
+		System.out.println("La variable decimalDoublePrec = " + decimalDoublePrec);
+		
+		
+		boolean bool = true;
+		System.out.println("La variable bool = " + bool);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class ExoVariables {
+	
+	public static void main(String[] args) {
+	
+		
+		//Declaration variable
+		float note = 14.5f;
+		int coef = 3;
+		float resultat;
+
+		//calcul
+		resultat = (note * coef);
+		
+		//affichage
+		
+		
+		System.out.println("note * coef = " + resultat);
+	
+		Scanner sc = new Scanner(System.in);
+		sc.next();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+}
