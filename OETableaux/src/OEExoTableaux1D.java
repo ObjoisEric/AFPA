@@ -143,15 +143,80 @@ public class OEExoTableaux1D {
 		}
 
 
+		
+
+		double nombre1 = 0;
+		double nombre2 = 0;
+		double resultat = 0;
+		String operation;
+		int operationSelect;
+		
+
+		System.out.print("Saisir le nombre 1 : ");
+		nombre1 = sc.nextInt();
+		System.out.println();
+
+		System.out.print("Saisir l'opération : ");
+		operation = sc.nextLine();
+		System.out.println();
+
+		System.out.print("Saisir le nombre 2 : ");
+		nombre2 = sc.nextInt();
+		System.out.println();
+		
+		
+
+		if (operation == "+") {
+
+			operationSelect = 1;
+
+		}else if (operation == "-") {
+
+			operationSelect = 2;
+			
+		}else if (operation == "*") {
+
+			operationSelect = 3;
+			
+		}else if ((operation == "/") && (nombre2 >= 0)) {
+
+			operationSelect = 4;
+			
+		}else if (operation == "*") {
+
+			operationSelect = 100;
+			
+		}else {
+			operationSelect = 0;
+		}
 
 
+		switch (operationSelect) {
+		case 0:
+			System.out.println("Cette operateur n'est pas valide");
+			break;
+		case 1:
+			resultat = nombre1 + nombre2;
+			break;
+		case 2:
+			resultat = nombre1 - nombre2;
+			break;
+		case 3:
+			resultat = nombre1 * nombre2;
+			break;
+		case 4:
+			resultat = nombre1 / nombre2;
+			break;
+		case 100:
+			System.out.println("division par 0 impossible");
+			break;	
+		default:	
+			System.out.println("Une erreur s'est produite");
+			break;
+		}
 
-
-
-
-
-
-
+		
+		System.out.println();
 
 
 
