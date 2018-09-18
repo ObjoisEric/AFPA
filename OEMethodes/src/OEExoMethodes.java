@@ -3,23 +3,21 @@ public class OEExoMethodes {
 
 	public static void main(String[] args) 
 	{
-		float noteJava = 14f ; 
-		float noteHtml = 13f ; 
-		float noteJavascript = 9f ; 
-		float noteCss = 8.5f ;
+		float noteJava = 14f; 
+		float noteHtml = 13f; 
+		float noteJavascript = 9f; 
+		float noteCss = 8.5f;
 
 
-		int coefJava = 3 ; 
-		int coefHtml = 2; 
-		int coefJavascript = 3 ; 
-		int coefCSs = 1;
+		int coefJava = 3; 
+		int coefHtml = 2;
+		int coefJavascript = 3;
+		int coefCss = 1;
 
-		float moyenne = ((noteJava * coefJava ) 
-				+ (noteHtml * coefHtml) 
-				+ (noteJavascript * coefJavascript) 
-				+ (noteCss * coefCSs)) 
-				/ (coefJava + coefHtml + coefJavascript + coefCSs);
+		float moyenne;
 
+		
+		moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCss);
 
 
 		System.out.println("La moyenne = " + moyenne);
@@ -29,22 +27,22 @@ public class OEExoMethodes {
 		if (moyenne <15)
 		{
 			System.out.println("recalcul de la moyenne en changant coeff");
-			coefJava = 1 ; 
+			coefJava = 1; 
 			coefHtml = 3; 
-			coefJavascript = 2 ;
-			coefCSs = 3;
-			moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCSs);	
+			coefJavascript = 2;
+			coefCss = 3;
+			moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCss);	
 			System.out.println("La moyenne = " + moyenne);
 		}
 
 		if (moyenne < 10) 
 		{
 			System.out.println("recalcul de la moyenne en changant coeff");
-			coefJava = 3 ; 
+			coefJava = 3; 
 			coefHtml = 3; 
-			coefJavascript = 4 ;
-			coefCSs = 3;
-			moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCSs);	
+			coefJavascript = 4;
+			coefCss = 3;
+			moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCss);	
 			System.out.println("La moyenne = " + moyenne);
 
 		}
@@ -52,12 +50,12 @@ public class OEExoMethodes {
 
 	}
 
-	public static float calculMoyenne(float noteJava,float noteHtml,float noteJavascript,float noteCss,int coefJava, int coefHtml,int coefJavascript,int coefCSs) {
+	public static float calculMoyenne(float noteJava,float noteHtml,float noteJavascript,float noteCss,int coefJava, int coefHtml,int coefJavascript,int coefCss) {
 		float moyenne 	= ((noteJava * coefJava ) 
 				+ (noteHtml * coefHtml) 
 				+ (noteJavascript * coefJavascript) 
-				+ (noteCss * coefCSs)) 
-				/ (coefJava + coefHtml + coefJavascript + coefCSs);
+				+ (noteCss * coefCss)) 
+				/ (coefJava + coefHtml + coefJavascript + coefCss);
 		
 		if(moyenne > 18) {
 			System.out.println("Très bien");
