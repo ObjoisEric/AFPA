@@ -23,30 +23,32 @@ public class OEMethodes {
 		System.out.println(division1515);
 	}
 
-	public static int addition(int nombre1, int nombre2) {
+	public static int addition(int nombre1, int nombre2) 
+	{
 		int resultat = nombre1 + nombre2;
 		return resultat;
 	}
 	
-	public static double soustraction(double nombre1, double nombre2) {
+	public static double soustraction(double nombre1, double nombre2) 
+	{
 		double resultat =  nombre1 - nombre2;
-		return resultat;
-		
+		return resultat;		
 	}
 	
-	public static double multiplication(double nombre1, double nombre2) {
+	public static double multiplication(double nombre1, double nombre2) 
+	{
 		double resultat =  nombre1 * nombre2;
-		return resultat;
-		
+		return resultat;		
 	}
 	
-	public static double division(double nombre1, double nombre2) {
+	public static double division(double nombre1, double nombre2) 
+	{
 		double resultat=0;
-		if (nombre2 != 0) {
+		if (nombre2 != 0) 
+		{
 			 resultat =  nombre1 / nombre2;
 		}
 		 
-		return resultat;
-		
+		return resultat;		
 	}
 }
