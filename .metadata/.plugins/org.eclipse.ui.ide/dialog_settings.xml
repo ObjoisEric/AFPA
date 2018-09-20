@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\59013-64-04\git\afpa2\afpa\tbdev\java\Methodes"/>
 		<item value="C:\Users\59013-64-04\eclipse-workspace\AFPA\AFPA"/>
 		<item value="C:\Users\59013-64-04\git\afpa2\afpa"/>
 		<item value="C:\Users\59013-64-04\git\afpa\tbdev\java"/>

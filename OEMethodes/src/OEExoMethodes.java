@@ -9,7 +9,6 @@ public class OEExoMethodes
 		float noteJavascript = 9f; 
 		float noteCss = 8.5f;
 
-
 		int coefJava = 3; 
 		int coefHtml = 2;
 		int coefJavascript = 3;
@@ -17,13 +16,7 @@ public class OEExoMethodes
 
 		float moyenne;
 
-		
 		moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCss);
-
-		
-		
-
-		
 
 		if (moyenne <15)
 		{
@@ -32,8 +25,7 @@ public class OEExoMethodes
 			coefHtml = 3; 
 			coefJavascript = 2;
 			coefCss = 3;
-			moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCss);	
-			
+			moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCss);				
 		}
 
 		if (moyenne < 10) 
@@ -44,14 +36,10 @@ public class OEExoMethodes
 			coefJavascript = 4;
 			coefCss = 3;
 			moyenne = calculMoyenne(noteJava, noteHtml, noteJavascript, noteCss, coefJava, coefHtml, coefJavascript, coefCss);	
-			
-
 		}
-
-
 	}
 
-	
+
 
 	public static float calculMoyenne(float noteJava,float noteHtml,float noteJavascript,float noteCss,int coefJava, int coefHtml,int coefJavascript,int coefCss) 
 	{
@@ -59,32 +47,37 @@ public class OEExoMethodes
 				+ (noteHtml * coefHtml) 
 				+ (noteJavascript * coefJavascript) 
 				+ (noteCss * coefCss)) 
-				/ (coefJava + coefHtml + coefJavascript + coefCss);
-		
+				/ (coefJava + coefHtml + coefJavascript + coefCss);		
 		affichageMoyenne(moyenne);
-		
+
 		return moyenne;
 	}
-	
+
 	public static void affichageMoyenne(float moyenne) 
 	{
 		System.out.println("La moyenne = " + moyenne);
-		if(moyenne > 18) {
+		if(moyenne > 18) 
+		{
 			System.out.println("Très bien");
-		}else if(moyenne > 15) {
+		}else if(moyenne > 15) 
+		{
 			System.out.println("Bien");
-		}else if(moyenne > 12) {
+		}else if(moyenne > 12) 
+		{
 			System.out.println("Assez bien");
-		}else if(moyenne > 10) {
+		}else if(moyenne > 10) 
+		{
 			System.out.println("Moyen");
-		}else if(moyenne > 8) {
+		}else if(moyenne > 8) 
+		{
 			System.out.println("Il peut faire mieux");
-		}else if(moyenne > 5) {
+		}else if(moyenne > 5) 
+		{
 			System.out.println("Il faut plus de travail");
-		}else {
+		}else 
+		{
 			System.out.println("A l’année prochaine, même heure, même endroit ;)");
 		}
-		
 	}
 
 
