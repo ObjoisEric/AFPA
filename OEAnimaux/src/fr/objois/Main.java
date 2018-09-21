@@ -1,4 +1,4 @@
-package fr.objois
+package fr.objois;
 
 import fr.objois.oeanimaux.Animal;
 import fr.objois.oeanimaux.Chat;
@@ -21,6 +21,7 @@ public class Main {
 		
 		rex.setNom("Rex");
 //		rex.nom = "Rex";
+		rex.setRace("Berger allemand");
 //		rex.race = "Berger allemand";
 //		rex.taille = 50;
 //		rex.poids = 30;
@@ -34,11 +35,11 @@ public class Main {
 
 		// Class Chat
 		Chat orion = new Chat();
-		orion.nom = "Orion";
-		orion.race = "Bleu russe";
-		orion.taille = 20;
-		orion.poids = 10;
-		orion.couleur = "gris";
+//		orion.nom = "Orion";
+//		orion.race = "Bleu russe";
+//		orion.taille = 20;
+//		orion.poids = 10;
+//		orion.couleur = "gris";
 
 		orion.miaule();
 		orion.dormir();
@@ -49,11 +50,11 @@ public class Main {
 		// Class Cheval
 		Cheval garou = new Cheval();
 		// Cheval garou = new Cheval("Garou", "Frison", 200,200,"noir");
-		garou.nom = "Garou";
-		garou.race = "Frison";
-		garou.taille = 200;
-		garou.poids = 200;
-		garou.couleur = "noir";
+//		garou.nom = "Garou";
+//		garou.race = "Frison";
+//		garou.taille = 200;
+//		garou.poids = 200;
+//		garou.couleur = "noir";
 
 		garou.hennir();
 		garou.dormir();
@@ -63,11 +64,11 @@ public class Main {
 
 		// Class Vache
 		Vache marguerrite = new Vache();
-		marguerrite.nom = "Marguerrite";
-		marguerrite.race = "Angus";
-		marguerrite.taille = 150;
-		marguerrite.poids = 200;
-		marguerrite.couleur = "noir";
+//		marguerrite.nom = "Marguerrite";
+//		marguerrite.race = "Angus";
+//		marguerrite.taille = 150;
+//		marguerrite.poids = 200;
+//		marguerrite.couleur = "noir";
 
 		marguerrite.beugler();
 		marguerrite.dormir();
@@ -76,11 +77,11 @@ public class Main {
 
 		// Class Loup
 		Loup lupus = new Loup();
-		lupus.nom = "Lupus";
-		lupus.race = "Husky de Sibérie";
-		lupus.taille = 50;
-		lupus.poids = 30;
-		lupus.couleur = "blanc";
+//		lupus.nom = "Lupus";
+//		lupus.race = "Husky de Sibérie";
+//		lupus.taille = 50;
+//		lupus.poids = 30;
+//		lupus.couleur = "blanc";
 
 		lupus.hurler();
 		lupus.dormir();
@@ -90,11 +91,11 @@ public class Main {
 
 		// Class Lapin
 		Lapin cookie = new Lapin();
-		cookie.nom = "Cookie";
-		cookie.race = "Lapin bélier";
-		cookie.taille = 10;
-		cookie.poids = 5;
-		cookie.couleur = "marron";
+//		cookie.nom = "Cookie";
+//		cookie.race = "Lapin bélier";
+//		cookie.taille = 10;
+//		cookie.poids = 5;
+//		cookie.couleur = "marron";
 
 		cookie.couiner();
 		cookie.dormir();
