@@ -1,3 +1,4 @@
+package fr.objois.oeanimaux;
 public class Cheval extends Animal{
 
 	

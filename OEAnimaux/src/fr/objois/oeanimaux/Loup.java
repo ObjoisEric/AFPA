@@ -1,3 +1,4 @@
+package fr.objois.oeanimaux;
 public class Loup extends Animal {
 
 	public Loup() {

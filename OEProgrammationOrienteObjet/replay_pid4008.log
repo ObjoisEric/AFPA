@@ -1,7 +1,0 @@
-JvmtiExport can_access_local_variables 1
-JvmtiExport can_hotswap_or_post_breakpoint 1
-JvmtiExport can_post_on_exceptions 1
-# 107 ciObject found
-ciMethod org/eclipse/jdt/launching/internal/org/objectweb/asm/ClassReader readUnsignedShort (I)I 2073 1 2137 0 -1
-ciMethod org/eclipse/jdt/launching/internal/org/objectweb/asm/ClassReader readStringish (I[C)Ljava/lang/String; 2489 1 309 0 -1
-ciMethod org/eclipse/jdt/launching/internal/org/objectweb/asm/ClassReader readClass (I[C)Ljava/lang/String; 2449 1 306 0 -1

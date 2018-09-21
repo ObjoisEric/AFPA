@@ -1,3 +1,14 @@
+package fr.objois
+
+import fr.objois.oeanimaux.Animal;
+import fr.objois.oeanimaux.Chat;
+import fr.objois.oeanimaux.Cheval;
+import fr.objois.oeanimaux.Chien;
+import fr.objois.oeanimaux.Lapin;
+import fr.objois.oeanimaux.Loup;
+import fr.objois.oeanimaux.Vache;
+
+
 
 public class Main {
 
@@ -7,11 +18,13 @@ public class Main {
 
 		// Class Chien
 		Chien rex = new Chien();
-		rex.nom = "Rex";
-		rex.race = "Berger allemand";
-		rex.taille = 50;
-		rex.poids = 30;
-		rex.couleur = "Blanc";
+		
+		rex.setNom("Rex");
+//		rex.nom = "Rex";
+//		rex.race = "Berger allemand";
+//		rex.taille = 50;
+//		rex.poids = 30;
+//		rex.couleur = "Blanc";
 
 		rex.aboyer();
 		rex.dormir();
@@ -95,7 +108,19 @@ public class Main {
 		Loup monAnimalLoup = (Loup) loup;
 		monAnimalLoup.hurler();
 		((Loup) loup).hurler();
-		((Chat) loup).miaule();
+	//	((Chat) loup).miaule();
+		
+		Chat chat1 = new Chat("Chat n°1", "Persan",125,125,"Rouge");
+		
+		System.out.println("jeu préféré : "+ chat1.getJeuPref());		
+		
+		chat1.setJeuPref("Rugby");		
+		System.out.println("jeu préféré : "+ chat1.getJeuPref());
+		
+		chat1.setJeuPref("");
+		System.out.println("jeu préféré : "+ chat1.getJeuPref());
+		
+		
 
 	}
 
