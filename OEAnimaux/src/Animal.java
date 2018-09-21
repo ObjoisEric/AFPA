@@ -8,7 +8,7 @@ public class Animal {
 	public String couleur;
 
 	public Animal() {
-
+		System.out.println("constructeur de la classe mère");
 	}
 
 	public Animal(String nom, String race, int taille, int poids, String couleur) {

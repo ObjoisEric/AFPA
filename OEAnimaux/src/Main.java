@@ -4,8 +4,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		System.out.println("Début du programme : ");
-		
-		//Class Chien
+
+		// Class Chien
 		Chien rex = new Chien();
 		rex.nom = "Rex";
 		rex.race = "Berger allemand";
@@ -18,24 +18,24 @@ public class Main {
 		rex.jouer();
 		rex.manger();
 		rex.mordre();
-		
-		//Class Chat
+
+		// Class Chat
 		Chat orion = new Chat();
 		orion.nom = "Orion";
 		orion.race = "Bleu russe";
 		orion.taille = 20;
 		orion.poids = 10;
 		orion.couleur = "gris";
-        
+
 		orion.miaule();
 		orion.dormir();
 		orion.jouer();
 		orion.manger();
 		orion.griffe();
-		
-		//Class Cheval
+
+		// Class Cheval
 		Cheval garou = new Cheval();
-		//Cheval garou = new Cheval("Garou", "Frison", 200,200,"noir");
+		// Cheval garou = new Cheval("Garou", "Frison", 200,200,"noir");
 		garou.nom = "Garou";
 		garou.race = "Frison";
 		garou.taille = 200;
@@ -47,53 +47,55 @@ public class Main {
 		garou.jouer();
 		garou.manger();
 		garou.frapper();
-		
-		//Class Vache
+
+		// Class Vache
 		Vache marguerrite = new Vache();
 		marguerrite.nom = "Marguerrite";
 		marguerrite.race = "Angus";
 		marguerrite.taille = 150;
 		marguerrite.poids = 200;
 		marguerrite.couleur = "noir";
-        
+
 		marguerrite.beugler();
 		marguerrite.dormir();
 		marguerrite.jouer();
-		marguerrite.manger();		
-		
-		//Class Loup
+		marguerrite.manger();
+
+		// Class Loup
 		Loup lupus = new Loup();
 		lupus.nom = "Lupus";
 		lupus.race = "Husky de Sibérie";
 		lupus.taille = 50;
 		lupus.poids = 30;
 		lupus.couleur = "blanc";
-        
+
 		lupus.hurler();
 		lupus.dormir();
 		lupus.jouer();
 		lupus.manger();
 		lupus.mordre();
-		
-		//Class Lapin
+
+		// Class Lapin
 		Lapin cookie = new Lapin();
 		cookie.nom = "Cookie";
 		cookie.race = "Lapin bélier";
 		cookie.taille = 10;
 		cookie.poids = 5;
 		cookie.couleur = "marron";
-        
+
 		cookie.couiner();
 		cookie.dormir();
 		cookie.jouer();
 		cookie.manger();
 		cookie.manger();
-		cookie.manger();		
-		
-		
-		
-		Animal loup = new Loup("Loup","loup garou",115,15,"bleu");
-		
+		cookie.manger();
+
+		Animal loup = new Loup("Loup", "loup garou", 115, 15, "bleu");
+
+		Loup monAnimalLoup = (Loup) loup;
+		monAnimalLoup.hurler();
+		((Loup) loup).hurler();
+		((Chat) loup).miaule();
 
 	}
 

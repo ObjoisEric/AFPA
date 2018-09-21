@@ -35,9 +35,9 @@
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item value="716" key="DIALOG_WIDTH"/>
+		<item value="735" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="448" key="DIALOG_HEIGHT"/>
+		<item value="456" key="DIALOG_HEIGHT"/>
 		<item value="129" key="DIALOG_X_ORIGIN"/>
 		<item value="225" key="DIALOG_Y_ORIGIN"/>
 	</section>

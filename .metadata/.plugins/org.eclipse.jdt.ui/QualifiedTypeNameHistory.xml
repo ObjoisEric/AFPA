@@ -4,6 +4,9 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="Ville"/>
+<fullyQualifiedTypeName name="Loup"/>
+<fullyQualifiedTypeName name="Chien"/>
+<fullyQualifiedTypeName name="Lapin"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
