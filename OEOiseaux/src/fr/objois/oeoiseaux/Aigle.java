@@ -1,6 +1,6 @@
 package fr.objois.oeoiseaux;
 
-public class Aigle extends Oiseaux {	
+public class Aigle extends Oiseaux implements OiseauVolant {	
 	
 	
 	public Aigle() {
@@ -13,11 +13,15 @@ public class Aigle extends Oiseaux {
 		
 	}
 	
+	
 	public void chasser(String nomAnimal) {
 		System.out.println(nomAnimal + " chasse");
 	}
 	
-	
+	@Override
+	public void voler() {
+		System.out.println(nom + " vole");
+	}
 	
 
 

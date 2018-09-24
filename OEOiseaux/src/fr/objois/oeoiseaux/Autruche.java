@@ -11,9 +11,7 @@ public class Autruche extends Oiseaux {
 		super(nom, taille, poids,race, plumes);		
 	}
 
-	public void voler() {
-		System.out.println("Les autruches ne savent pas voler");
-	}
+	
 	
 	
 }

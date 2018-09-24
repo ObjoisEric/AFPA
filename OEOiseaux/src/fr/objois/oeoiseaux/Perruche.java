@@ -1,6 +1,6 @@
 package fr.objois.oeoiseaux;
 
-public class Perruche extends Oiseaux {
+public class Perruche extends Oiseaux implements OiseauVolant {
 
 	public Perruche() {
 		super();
@@ -11,5 +11,9 @@ public class Perruche extends Oiseaux {
 		super(nom, taille, poids, race, plumes);
 		
 	}
-
+	
+	@Override
+	public void voler() {
+		System.out.println(nom + " vole");
+	}
 }

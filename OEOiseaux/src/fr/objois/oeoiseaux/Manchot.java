@@ -1,6 +1,6 @@
 package fr.objois.oeoiseaux;
 
-public class Manchot extends Oiseaux {
+public class Manchot extends Oiseaux implements OiseauQuiNage {
 
 	public Manchot() {
 		super();
@@ -12,14 +12,12 @@ public class Manchot extends Oiseaux {
 		
 	}
 
+	@Override
 	public void nager() {		
-		System.out.println( "Le manchot nager");
+		System.out.println( "Le manchot nage");
 	}
 	
-	@Override
-	public void voler() {
-		System.out.println("Les manchots ne savent pas voler");
-	}
+	
 	
 	
 }

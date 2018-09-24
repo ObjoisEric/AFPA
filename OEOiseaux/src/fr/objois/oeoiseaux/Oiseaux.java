@@ -7,7 +7,7 @@ public class Oiseaux {
 	protected int poids;
 	protected String race;
 	protected boolean plumes;
-	protected int testChiffre=0;
+	
 	
 	
 	public Oiseaux() {
@@ -69,11 +69,7 @@ public class Oiseaux {
 	
 	public void boire() {
 		System.out.println(nom + " boit");
-	}
-	
-	public void voler() {
-		System.out.println(nom + " vole");
-	}
+	}	
 	
 	public void jouer() {
 		System.out.println(nom + " joue");
@@ -87,10 +83,8 @@ public class Oiseaux {
 		System.out.println(nom + " saute");
 	}
 	
-	public void test() {
-		
-		testChiffre +=1;
-		System.out.println(testChiffre);
-	}
+	
+	
+	
 	
 }

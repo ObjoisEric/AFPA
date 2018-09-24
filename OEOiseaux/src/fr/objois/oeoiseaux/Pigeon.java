@@ -1,6 +1,6 @@
 package fr.objois.oeoiseaux;
 
-public class Pigeon extends Oiseaux {
+public class Pigeon extends Oiseaux implements OiseauVolant {
 
 	public Pigeon() {
 		super();
@@ -13,5 +13,9 @@ public class Pigeon extends Oiseaux {
 	}
 
 	
+	@Override
+	public void voler() {
+		System.out.println(nom + " vole");
+	}
 	
 }
