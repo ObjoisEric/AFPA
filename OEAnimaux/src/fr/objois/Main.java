@@ -19,10 +19,11 @@ public class Main {
 		// Class Chien
 		Chien rex = new Chien();
 		
-		rex.setNom("Rex");
+		
 //		rex.nom = "Rex";
-		rex.setRace("Berger allemand");
+		rex.setNom("Rex");		
 //		rex.race = "Berger allemand";
+		rex.setRace("Berger allemand");
 //		rex.taille = 50;
 //		rex.poids = 30;
 //		rex.couleur = "Blanc";

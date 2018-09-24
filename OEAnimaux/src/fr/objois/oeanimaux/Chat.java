@@ -10,8 +10,7 @@ public class Chat extends Animal {
 	}
 
 	public Chat(String nom, String race, int taille, int poids, String couleur) {
-		super(nom, race, taille, poids, couleur);
-		// TODO Auto-generated constructor stub
+		super(nom, race, taille, poids, couleur);		
 	}
 
 	public void miaule() {
