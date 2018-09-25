@@ -9,4 +9,16 @@
 <fullyQualifiedTypeName name="Chien"/>
 <fullyQualifiedTypeName name="Lapin"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="fr.objois.oeoiseaux.Aigle"/>
+<fullyQualifiedTypeName name="fr.objois.oeoiseaux.Manchot"/>
+<fullyQualifiedTypeName name="fr.objois.oeoiseaux.Perruche"/>
+<fullyQualifiedTypeName name="fr.objois.oeoiseaux.Pigeon"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="fr.objois.oeoiseaux.Oiseaux"/>
+<fullyQualifiedTypeName name="fr.objois.oeoiseaux.OiseauQuiNage"/>
+<fullyQualifiedTypeName name="fr.objois.oeoiseaux.OiseauVolant"/>
+<fullyQualifiedTypeName name="fr.objois.oeoiseaux.Canard"/>
+<fullyQualifiedTypeName name="fr.objois.oevehicule.Vehicule"/>
+<fullyQualifiedTypeName name="fr.objois.VehiculeQuiNavigue"/>
+<fullyQualifiedTypeName name="fr.objois.VehiculeQuiVole"/>
 </qualifiedTypeNameHistroy>
