@@ -6,6 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		
+		//crétaion de l'objet voiture c3 avec les valeurs 
 		Voiture c3 = new Voiture();		
 		c3.setMarque("citroen");
 		c3.setCouleur("rouge");
@@ -15,7 +17,7 @@ public class Main {
 		c3.setKilometrage(0);
 		c3.setNombreDePortes(5);
 		
-		
+		//appelle des 3 méthodes pour l'objet c3 
 		c3.demarrer();
 		c3.accelerer();
 		c3.rouler();
@@ -44,8 +46,9 @@ public class Main {
 		c3.freiner();
 		System.out.println("nombre porte de la voiture : "+ c3.getNombreDePortes());
 		
-		
+		//creation de l'objet camion h16 avec ces valeurs ainsi que l'objet camion camionUtiliser
 		Camion h16 = new Camion();
+		Camion camionUtiliser = null;
 		
 		h16.setMarque("volvo");
 		h16.setCouleur("vert");
@@ -59,10 +62,11 @@ public class Main {
 		
 		System.out.println();
 		System.out.println(h16.getMarque()+" "+h16.getCapacite());
-		Camion camionUtilise = h16;
+		//le camionUtiliser est égale à celui h16
+		camionUtiliser = h16;
 		
 		Camion h17 = null;
-		if (camionUtilise.getCapacite()<25) {
+		if (camionUtiliser.getCapacite()<25) {
 			
 			System.out.println("changement de camion");
 			
@@ -74,7 +78,7 @@ public class Main {
 			h17.setPrix(150000);
 			h17.setKilometrage(0);
 			h17.setCapacite(30);
-			camionUtilise = h17;
+			camionUtiliser = h17;
 			
 		}
 		
@@ -90,9 +94,9 @@ public class Main {
 //			h16.rouler();	
 //		}
 		
-		camionUtilise.demarrer();
-		camionUtilise.accelerer();
-		camionUtilise.rouler();
+		camionUtiliser.demarrer();
+		camionUtiliser.accelerer();
+		camionUtiliser.rouler();
 
 		
 
