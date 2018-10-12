@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
@@ -22,4 +21,10 @@
 <fullyQualifiedTypeName name="fr.objois.VehiculeQuiVole"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="fr.objois.oejusteprix.JustePrix"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="fr.objois.oejusteprix.Factorielle"/>
+<fullyQualifiedTypeName name="fr.objois.oecarre.OECarre"/>
+<fullyQualifiedTypeName name="fr.objois.oetriage.Triage"/>
 </qualifiedTypeNameHistroy>

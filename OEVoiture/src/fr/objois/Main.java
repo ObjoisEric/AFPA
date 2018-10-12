@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		
-		//crétaion de l'objet voiture c3 avec les valeurs 
+		//création de l'objet voiture c3 avec les valeurs 
 		Voiture c3 = new Voiture();		
 		c3.setMarque("citroen");
 		c3.setCouleur("rouge");
