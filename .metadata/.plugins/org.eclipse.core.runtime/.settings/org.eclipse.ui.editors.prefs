@@ -1,8 +1,8 @@
-PHPReadOccurrenceIndicationColor=0,0,0
-PHPWriteOccurrenceIndicationColor=0,0,0
+PHPReadOccurrenceIndicationColor=7,54,66
+PHPWriteOccurrenceIndicationColor=7,54,66
 eclipse.preferences.version=1
-javaScriptOccurrenceIndicationColor=0,0,0
-org.eclipse.cdt.ui.occurrenceIndicationColor=0,0,0
+javaScriptOccurrenceIndicationColor=7,54,66
+org.eclipse.cdt.ui.occurrenceIndicationColor=7,54,66
 overviewRuler_migration=migrated_3.1
-pydevOccurrenceIndicationColor=0,0,0
+pydevOccurrenceIndicationColor=7,54,66
 spellingEnabled=false

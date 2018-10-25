@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <syncparticipants>
-<participant displayName="Git (OECarre/src/fr/objois)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1539336648631">
+<participant displayName="Git (OEMethodes)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1540471546052">
 <data forceFetch="false" root="false">
-<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="OECarre/src/fr/objois" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="OEMethodes" startupAction="none">
 <org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
 <org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
 <mappings>
-<resources resourcePath="/OECarre/src/fr/objois" resourceType="2"/>
+<resources resourcePath="/OEMethodes" resourceType="4"/>
 </mappings>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
-<gitSynchronizeData container="C:/Users/59013-64-04/eclipse-workspace/AFPA/AFPA/OETableaux" dstRev="refs/remotes/origin/master" inludeLocal="true" srcRev="HEAD">
-<includedPaths>
-<path path="C:/Users/59013-64-04/eclipse-workspace/AFPA/AFPA/OECarre/src/fr/objois"/>
-</includedPaths>
-</gitSynchronizeData>
+<gitSynchronizeData container="C:/Users/59013-64-04/eclipse-workspace/AFPA/AFPA/OETableaux" dstRev="refs/remotes/origin/master" inludeLocal="true" srcRev="HEAD"/>
 </data>
 </participant>
 </syncparticipants>

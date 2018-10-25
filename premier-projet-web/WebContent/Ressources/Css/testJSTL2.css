@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+td,tr{
+	
+	border: purple 1px solid;
+	text-align:center
+	
+}
+
+table {
+	border-collapse: collapse;
+	
+	    
+}

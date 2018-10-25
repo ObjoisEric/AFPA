@@ -70,24 +70,18 @@ public class OECarre {
 	}
 	public static void tableauPrintLosange(int nombreSaisi) {
 		int sommetLosange = ((int) Math.ceil(nombreSaisi/2.0))-1; 
-		System.out.println(sommetLosange);
+
 		if (nombreSaisi%2 != 0) {
 			for (int i = 0; i < nombreSaisi; i++) {
 				for (int j = 0; j < nombreSaisi; j++) {		
-					if (i == 0 || i == (nombreSaisi-1)) {
-						if (sommetLosange == j) {
-							System.out.print("* ");							
-						}else {							
-							System.out.print("  ");
-						}					
-					}else if(i < sommetLosange) {
+					 if(i < sommetLosange) {
 						if(((sommetLosange-i)== j) || (sommetLosange+i)== j){
 							System.out.print("* ");	
 						}else {
 							System.out.print("  ");
 						}
 					}else {
-						if(((i-sommetLosange)== j)||(i+sommetLosange)== j){
+						if(((i-sommetLosange)== j)||(((nombreSaisi-1)+sommetLosange)-i)== j){
 							System.out.print("* ");	
 						}else {
 							System.out.print("  ");

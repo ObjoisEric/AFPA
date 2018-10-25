@@ -21,10 +21,16 @@
 <fullyQualifiedTypeName name="fr.objois.VehiculeQuiVole"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="fr.objois.oejusteprix.JustePrix"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="fr.objois.oejusteprix.Factorielle"/>
-<fullyQualifiedTypeName name="fr.objois.oecarre.OECarre"/>
 <fullyQualifiedTypeName name="fr.objois.oetriage.Triage"/>
+<fullyQualifiedTypeName name="fr.objois.oecarre.OECarre"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="fr.objois.bean.Personne"/>
+<fullyQualifiedTypeName name="fr.objois.bean.Departement"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="fr.objois.bean.Pays"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="fr.objois.bean.Produit"/>
 </qualifiedTypeNameHistroy>
