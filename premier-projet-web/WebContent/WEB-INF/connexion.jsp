@@ -24,25 +24,24 @@
         </p>
     </div>
 
-    <form method="POST" action="">
-        
+    <form method="POST" action="login">        
         <fieldset>
             <legend>Formulaire de connexion :</legend>
             <div>
-                <label for="nom">login : </label>
+                <label for="login">login : </label>
                 <span class="InputFormulaire">
-                    <input type="text" name="nom" id="nom" placeholder="nom">
+                    <input type="text" name="login" id="login" placeholder="login">
                 </span>
             </div>
-            <div><label for="mdp">mdp : </label>
+            <div>
+            	<label for="password">password : </label>
                 <span class="InputFormulaire">
-                    <input type="password" name="mdp" id="mdp" placeholder="mot de passe"><br />
+                    <input type="password" name="password" id="password" placeholder="password"><br />
                 </span>
             </div>
             <div>
                 <input type="submit" id="submit"/>
             </div>
-
         </fieldset>
     </form>
     <div id="retour">

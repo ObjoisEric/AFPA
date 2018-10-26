@@ -21,7 +21,7 @@
 
 %>
     <div id="blocFormulaire">
-        <form action="">
+        <form action="inscription" method="post">
             <fieldset>
                 <legend>Vos Coordonées :</legend>
                 <div class="blocValeur">

@@ -360,11 +360,30 @@ public class InscriptionServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+	    String nom = (String) request.getParameter("nom");
+	    String prenom= (String) request.getParameter("prenom");
+	    String date = (String) request.getParameter("dateNaissance");
+	    String numEtRue = (String) request.getParameter("numEtRue");
+	    String ville = (String) request.getParameter("ville");
+	    String mail = (String) request.getParameter("mail");
+	    String telephone = (String) request.getParameter("telephone");
+	    String departement = (String) request.getParameter("departement");
+	    String pays = (String) request.getParameter("pays");
+	    String genre = (String) request.getParameter("genre");
+	    String urlPhoto = (String) request.getParameter("");
+		
+	    String commentaires = (String) request.getParameter("commentaires");
+		
+		Personne nouveauUtilisateur = new Personne(nom, prenom, date, numEtRue, ville, mail, telephone, departement, pays, genre, urlPhoto);
 		
 		
+		request.setAttribute("nouveauUtilisateur", nouveauUtilisateur);
+		request.setAttribute("commentaires", commentaires);
 		
+		System.out.println("post !!!!!!");
 		
-		doGet(request, response);
+		//this.getServletContext().getRequestDispatcher("/WEB-INF/inscriptionOK.jsp").
+		
 	}
 
 }

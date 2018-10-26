@@ -9,7 +9,7 @@
 <title>Personne</title>
 </head>
 <body>
-
+${timeCreationSession}
 	<c:forEach items="${tableauPersonne}" var="personne" varStatus="valeurIndice">
 		<div class="blocPhoto">
 			<div class="imagePersonne">

@@ -1,7 +1,10 @@
 package fr.objois;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,10 +35,27 @@ public class UsersServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		
-		
+
 		HttpSession session = request.getSession();
+		session.setMaxInactiveInterval(900);
+		
 		ArrayList<Personne> tableauPersonne = new ArrayList<Personne>();
+		long timeCreationSession = session.getCreationTime();
+		
+		
+		//System.out.println(new Date(timeCreationSession));
+		//System.out.println("current session : " + timeCreationSession);
+		//System.out.println("temps actuel :    " + System.currentTimeMillis());
+		
+		if ((timeCreationSession + 300000) < System.currentTimeMillis()) {
+			
+			session.invalidate();
+			session = request.getSession();
+			System.out.println("new session");
+			
+		}
+		
+		
 		
 		tableauPersonne.add(new Personne("tomate","tomate","2000-05-03","2 rue de la tomate","Tomate","tomate.tomate@tomate.com","0123456789","tomate","tomate","tomate","Ressources/Images/tomate.jpg"));
 		tableauPersonne.add(new Personne("banane","banane","2000-05-03","2 rue de la banane","banane","banane.banane@banane.com","0123456789","banane","banane","banane","Ressources/Images/banane.jpg"));
@@ -52,6 +72,8 @@ public class UsersServlet extends HttpServlet {
 		
 		request.setAttribute("tableauPersonne", tableauPersonne);
 		request.setAttribute("sessionID", sessionID);
+		request.setAttribute("timeCreationSession", timeCreationSession);
+		
 		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(request, response);
 	}
