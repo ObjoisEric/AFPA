@@ -382,7 +382,7 @@ public class InscriptionServlet extends HttpServlet {
 		
 		System.out.println("post !!!!!!");
 		
-		//this.getServletContext().getRequestDispatcher("/WEB-INF/inscriptionOK.jsp").
+		//this.getServletContext().getRequestDispatcher("/WEB-INF/inscriptionOK.jsp").forward(request, response);
 		
 	}
 

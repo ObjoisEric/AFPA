@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.blocImage:hover{
+    border: turquoise 0.5em solid;   
+}
+.photo{
+    height: 75%;
+    
+    text-align: center;
+    margin : 0 auto;
+}
+.blocImage{
+    height : 100%;
+    position: relative;
+    border: white 0.5em solid;  
+    background-color:  ;
+    
+}
+.textImage{
+    font-size: 350%;
+    height : calc(25% - 20px);
+    text-align: center;
+    border: burlywood 0.5em solid;    
+}
+.prixProduit{
+    font-size: 350%;
+    color: black;
+    -webkit-text-fill-color: aquamarine; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+body,html{
+	width: 100%;
+	position: relative;
+	height : 100%;
+}
+.flexcontainer{
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	
+}
+.retour{
+    width: 100px;    
+    margin: auto;
+    background-color: green;
+}
+#buttonRetour{
+    background-color: green;
+    color: yellow;
+    border: none;
+}
+
+.retour-bloc{
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    bottom: 0px;
+    opacity: 0.2;
+}
+.retour-bloc:hover{
+    opacity: 1;
+}

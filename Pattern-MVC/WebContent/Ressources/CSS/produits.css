@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+.blocImage:hover{
+    border: turquoise 0.5em solid;   
+}
+.imageProduit{
+    width: 100%;
+    height: 200px;
+}
+.blocImage{
+    float: left;
+    width: 20%;
+    height: 20%;
+    position: relative;
+    border: white 0.5em solid;  
+    margin-right: 2%;
+    margin-left: 2%; 
+}
+.textImage{
+    font-size: 125%;
+    text-align: center;
+    border:burlywood 0.5em solid;    
+}
+.prixProduit{
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 200%;
+    color: black;
+    -webkit-text-fill-color: aquamarine; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
