@@ -11,8 +11,7 @@
 
 	<div class="blocImage">
 		<div class="photo">
-			<img src="${produitDetail.url}"
-				alt="${produitDetail.nom}"
+			<img src="${produitDetail.url}" alt="${produitDetail.nom}"
 				title="${produitDetail.nom}" class="imageProduit" /><br />
 		</div>
 		<div class="flexcontainer">
@@ -22,6 +21,14 @@
 			<div class="prixProduit">
 				<p>${produitDetail.prix}€</p>
 			</div>
+		</div>
+	</div>
+	<div class="retour-bloc">
+		<div class="retour">
+			<a href="produits">
+				<button type="button" id="buttonRetour">Retour à la page
+					produit</button>
+			</a>
 		</div>
 	</div>
 

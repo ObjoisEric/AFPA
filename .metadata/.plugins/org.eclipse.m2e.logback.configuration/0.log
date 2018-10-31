@@ -43,3 +43,5 @@
 2018-10-29 14:02:35,858 [Worker-121: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-websocket/9.0.12/tomcat-websocket-9.0.12-sources.jar
 2018-10-29 14:02:50,712 [Worker-113: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-coyote/9.0.12/tomcat-coyote-9.0.12-sources.jar
 2018-10-29 14:02:54,762 [Worker-113: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-coyote/9.0.12/tomcat-coyote-9.0.12-sources.jar
+2018-10-30 08:31:27,495 [Worker-6: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-10-31 09:05:37,428 [Worker-9: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

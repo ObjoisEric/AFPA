@@ -19,14 +19,14 @@ import fr.objois.business.ProduitBusiness;
 public class ProduitsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	ProduitBusiness produitB = new ProduitBusiness();
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public ProduitsServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public ProduitsServlet() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -34,14 +34,14 @@ public class ProduitsServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		ArrayList<Produit> tableauProduit = produitB.getProduit();
-		
-		
+
+
 		request.setAttribute("tableauProduit", tableauProduit);
-		
-		
-			this.getServletContext().getRequestDispatcher("/WEB-INF/Produit/produits.jsp").forward(request, response);
-			
-		
+
+
+		this.getServletContext().getRequestDispatcher("/WEB-INF/Produit/produits.jsp").forward(request, response);
+
+
 	}
 
 	/**

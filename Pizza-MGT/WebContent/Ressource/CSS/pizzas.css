@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+table,tr,td,th {
+	border : green 1px solid;
+	border-collapse: collapse;	
+}
+th {
+	text-align: center;
+}
+table {	
+	margin: 0 auto;
+}
+
+h1 {
+	
+	border: red solid 1px;
+	text-align: center;
+	
+	
+}
