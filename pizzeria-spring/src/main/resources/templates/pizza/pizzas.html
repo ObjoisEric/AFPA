@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" th:href="@{CSS/pizzas.css}">
+</head>
+<body>
+	<h1>Liste des Pizzas</h1>
+	<table>
+		<tr>
+			<th>id</th>
+			<th>libelle</th>
+			<th>reference</th>
+			<th>prix</th>
+			<th>urlImage</th>
+		</tr>
+		<tr th:each="pizza : ${pizzaListe}">
+			<td th:text="${pizza.id}"></td>
+			<td th:text="${pizza.libelle}"></td>
+			<td th:text="${pizza.reference}"></td>
+			<td th:text="${pizza.prix}"></td>
+			<td th:text="${pizza.urlImage}"></td>
+		</tr>
+	</table>
+	<script type="text/javascript" th:src="@{JS/pizzas.js}"></script>
+</body>
+</html>

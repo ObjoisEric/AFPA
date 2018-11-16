@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{css/enseignants.css}">
+<link rel="stylesheet" type="text/css" th:href="@{css/header.css}">
+<meta charset="ISO-8859-1">
+<title>detail enseignant</title>
+</head>
+<body>
+<header th:insert="@{ressource/headerNav}"></header>
+
+
+<h1 th:text="'detail de l\'enseignant : ' + ${enseignantDetail.nom} + ' ' + ${enseignantDetail.prenom}"> </h1>
+
+<p th:text="'numero enseignant : '+ ${enseignantDetail.numeroEnseignant}"></p>
+<p th:text="'nom : '+ ${enseignantDetail.nom}"></p>
+<p th:text="'prenom : '+ ${enseignantDetail.prenom}"></p>
+<p th:text="'date naissance : '+ ${enseignantDetail.dateNaissance}"></p>
+<p th:text="'sexe : '+ ${enseignantDetail.sexe}"></p>
+<p th:text="'grade : '+ ${enseignantDetail.grade}"></p>
+<p th:text="'date embauche : '+ ${enseignantDetail.dateEmbauche}"></p>
+            
+<a th:href="@{enseignants}">retour liste enseignants</a>
+
+</body>
+</html>

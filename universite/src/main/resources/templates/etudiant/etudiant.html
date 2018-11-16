@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{css/etudiants.css}">
+<link rel="stylesheet" type="text/css" th:href="@{css/header.css}">
+<meta charset="ISO-8859-1">
+<title>detail etudiant</title>
+</head>
+<body>
+	<header th:insert="@{ressource/headerNav}"></header>
+
+	<div>
+		<h1
+			th:text="'detail de l\'etudiant : '+ ${detailEtudiant.nom} + ' '+ ${detailEtudiant.prenom}"></h1>
+
+		<p
+			th:text="'numero etudiant : '+ ${detailEtudiant.numeroEtudiant}"></p>
+		<p th:text="'nom : '+ ${detailEtudiant.nom}"></p>
+		<p th:text="'prenom : '+ ${detailEtudiant.prenom}"></p>
+		<p th:text="'date naissance : '+ ${detailEtudiant.dateNaissance}"></p>
+		<p th:text="'sexe : '+ ${detailEtudiant.sexe}"></p>
+		<a th:href="@{etudiants}">retour</a>
+
+
+
+	</div>
+
+</body>
+</html>

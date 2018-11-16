@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="Ressource/CSS/ajoutPizza.css" />
+<link rel="stylesheet" href="Ressource/CSS/pizzas.css" />
 <meta charset="ISO-8859-1">
 <title>Ajout de pizza</title>
 </head>
@@ -20,10 +20,18 @@
 			<input type="text" name="prix" id="prix" placeholder="prix" /><br />
 			<label for="urlImage">urlImage : </label><br />
 			<input type="text" name="urlImage" id="urlImage"
-				placeholder="url Image" /><br /> <input type="submit"
-				value="Ajouter" />
+				placeholder="url Image" /><br /> 
+			<input type="submit" value="Ajouter" />
 		</form>
 	</div>
+	<div class="retour-bloc">
+		<div class="retour">
+			<a href="pizzas">
+				<button type="button" class="buttonRetour" >Acceuil</button>
+			</a>
+		</div>
+	</div>
+	
 
 
 

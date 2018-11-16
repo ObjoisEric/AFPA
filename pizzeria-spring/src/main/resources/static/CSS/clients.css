@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+td,tr,th,table {
+	border: orange 2px solid;
+	border-collapse: collapse;
+	background-color: rgb(240, 240, 240);
+}
+.line,.column {
+	border: orange 1px solid;
+	border-collapse: collapse;
+	background-color: rgb(240, 240, 240);	
+}
+body{
+	margin:0;
+}
+.line{
+	width: fit-content;
+}
+.column{
+	float: left;
+	width: 173px;
+}

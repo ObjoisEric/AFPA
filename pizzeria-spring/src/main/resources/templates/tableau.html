@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1 th:text="${listChaine}"></h1>
+<table>
+	<tr th:each="nom,i : ${listChaine}">
+		<td th:text="${i.index}"></td>
+		<td th:text="${i.count}"></td>
+		<td th:text="${nom}"></td>
+	</tr>
+</table>
+</body>
+</html>

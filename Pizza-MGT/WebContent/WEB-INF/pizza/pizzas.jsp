@@ -11,7 +11,28 @@
 </head>
 <body>
 
-<h1>PIZZERIA !</h1>
+	<h1>PIZZERIA !</h1>
+
+	<div class="menu-bloc">
+		<div class="menuLien">
+			<button type="button" class="buttonLien"
+				onclick="document.location.href = 'ajoutPizza';">Ajouter
+				une Pizza</button>
+			<button type="button" class="buttonLien"
+				onclick="document.location.href = 'modifyPizza';">Modifier
+				une Pizza</button>
+			<button type="button" class="buttonLien"
+				onclick="document.location.href = 'deletePizza';">Supprimer
+				une Pizza</button>
+			<button type="button" class="buttonLien"
+				onclick="document.location.href = 'sortIDPizza';">Ranger
+				les ID Pizza</button>
+		</div>
+	</div>
+
+	<br />
+	<br />
+
 
 	<table>
 		<tr>
@@ -33,13 +54,18 @@
 		</c:forEach>
 	</table>
 
-	<br/>
-	<a href="ajoutPizza">Ajouter Une pizza</a>
-	<br/>
-	<a href="modifyPizza">Modifier Une pizza</a>
-	<br/>
-	<a href="deletePizza">Supprimer Une pizza</a>
-	<br/>
+
+
+	<br />
+	<a href="ajoutPizza">Ajouter une pizza</a>
+	<br />
+	<a href="modifyPizza">Modifier une pizza</a>
+	<br />
+	<a href="deletePizza">Supprimer une pizza</a>
+	<br />
 	<a href="sortIDPizza">RANGE les ID</a>
+
+
+
 </body>
 </html>

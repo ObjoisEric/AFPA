@@ -1,4 +1,5 @@
 @charset "ISO-8859-1";
+
 table,tr,td,th {
 	border : green 1px solid;
 	border-collapse: collapse;	
@@ -13,7 +14,61 @@ table {
 h1 {
 	
 	border: red solid 1px;
-	text-align: center;
+	text-align: center;	
+}
+.formAjout {
 	
+	margin: auto;	
+	width: fit-content;
 	
+}
+.formPizza {
+	
+	margin: auto;	
+	width: fit-content;
+	
+}
+
+.retour{
+    width: fit-content;    
+    margin: auto;
+    background-color: red;
+}
+.buttonRetour{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+.retour-bloc{
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    bottom: 0px;
+    opacity: 0.2;
+}
+.retour-bloc:hover{
+    opacity: 1;
+}
+
+.menuLien{
+    width: fit-content;    
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    
+}
+.buttonLien{
+	margin: -1.5px;
+    background-color: red;
+    color: white;
+    border: green solid 3px;
+    font-size: 20px;
+}
+.menu-bloc{
+    position: sticky;
+    top:0; 
+    margin: auto;
+    width: 100%;    
+   text-align: center;
 }

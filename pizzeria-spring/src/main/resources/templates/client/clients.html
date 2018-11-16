@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{CSS/clients.css}">
+<meta charset="ISO-8859-1">
+<title>Clients</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>numeroClient</th>
+			<th>nom</th>
+			<th>prenom</th>
+			<th>adresse</th>
+			<th>tel Fixe</th>
+			<th>tel Portable</th>
+			<th>date naissance</th>
+			<th>email</th>
+		</tr>
+		<tr th:each="client : ${listeClient}">
+			<td th:text="${client.numeroClient}"></td>
+			<td th:text="${client.nom}"></td>
+			<td th:text="${client.prenom}"></td>
+			<td th:text="${client.adresse}"></td>
+			<td th:text="${client.telFixe}"></td>
+			<td th:text="${client.telPortable}"></td>
+			<td th:text="${client.dateNaissance}"></td>
+			<td th:text="${client.email}"></td>
+		</tr>
+	</table>
+	<form action ="" id="afficherClients">
+	<div class="line">
+		<div class="column">numeroClient</div>
+		<div class="column">nom</div>
+		<div class="column">prenom</div>
+		<div class="column">adresse</div>
+		<div class="column">tel Fixe</div>
+		<div class="column">tel Portable</div>
+		<div class="column">date naissance</div>
+		<div class="column">email</div>	
+	</div>
+	<div th:each="client,i : ${listeClient}" class="line">
+		<div th:class = "${'ligne' + i.count + ' column' }"><input type="text" disabled="disabled" th:value="${client.numeroClient}"/></div>
+		<div th:class = "${'ligne' + i.count + ' column' }"><input type="text" disabled="disabled" th:value="${client.nom}"/></div>
+		<div th:class = "${'ligne' + i.count + ' column' }"><input type="text" disabled="disabled" th:value="${client.prenom}"/></div>
+		<div th:class = "${'ligne' + i.count + ' column' }"><input type="text" disabled="disabled" th:value="${client.adresse}"/></div>
+		<div th:class = "${'ligne' + i.count + ' column' }"><input type="text" disabled="disabled" th:value="${client.telFixe}"/></div>
+		<div th:class = "${'ligne' + i.count + ' column' }"><input type="text" disabled="disabled" th:value="${client.telPortable}"/></div>
+		<div th:class = "${'ligne' + i.count + ' column' }"><input type="text" disabled="disabled" th:value="${client.dateNaissance}"/></div>
+		<div th:class = "${'ligne' + i.count + ' column' }"><input type="text" disabled="disabled" th:value="${client.email}"/></div>
+	</div>
+	
+	
+	</form>
+	
+	
+	<script type="text/javascript" th:src="@{JS/clients.js}"></script>
+</body>
+</html>

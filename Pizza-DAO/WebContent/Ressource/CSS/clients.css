@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+table,tr,td,th{
+	
+	border: orange solid 1px;
+	border-collapse: collapse;
+	
+}
+
+#boutonAjoutClient{
+	
+	border: orange solid 1px;
+}
+
+.color-FieldEmpty{
+	border-color: red solid 3px;
+}
+.color-FieldOk{
+	color-color: green solid 3px; 
+}

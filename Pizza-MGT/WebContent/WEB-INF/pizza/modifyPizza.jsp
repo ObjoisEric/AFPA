@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="Ressource/CSS/ajoutPizza.css" />
+<link rel="stylesheet" href="Ressource/CSS/pizzas.css" />
 <meta charset="ISO-8859-1">
 <title>Modification Pizza</title>
 </head>
@@ -38,6 +38,13 @@
 				value="${pizza.id}"> <br />
 			<input type="submit" value="Modifier" />
 		</form>
+	</div>
+	<div class="retour-bloc">
+		<div class="retour">
+			<a href="pizzas">
+				<button type="button" class="buttonRetour" >Acceuil</button>
+			</a>
+		</div>
 	</div>
 
 </body>

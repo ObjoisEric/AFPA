@@ -1,6 +1,6 @@
 Console.highWaterMark=88000
 Console.limitConsoleOutput=false
-Console.width=200
+Console.width=275
 Console.wrap=true
 eclipse.preferences.version=1
 org.eclipse.debug.ui.MemoryHistoryKnownColor=235,235,235

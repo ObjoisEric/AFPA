@@ -11,3 +11,24 @@
 	width: fit-content;
 	
 }
+.retour{
+    width: fit-content;    
+    margin: auto;
+    background-color: red;
+}
+.buttonRetour{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+.retour-bloc{
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    bottom: 0px;
+    opacity: 0.2;
+}
+.retour-bloc:hover{
+    opacity: 1;
+}

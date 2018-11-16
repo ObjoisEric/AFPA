@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="Ressource/CSS/pizzas.css" />
 <meta charset="ISO-8859-1">
 <title>Supprimer Une pizza</title>
 </head>
@@ -20,6 +21,13 @@
 	<br/>
 	<input type="submit" value="Supprimer"/> 
 </form>
+	<div class="retour-bloc">
+		<div class="retour">
+			<a href="pizzas">
+				<button type="button" class="buttonRetour">Acceuil</button>
+			</a>
+		</div>
+	</div>
 
 </body>
 </html>

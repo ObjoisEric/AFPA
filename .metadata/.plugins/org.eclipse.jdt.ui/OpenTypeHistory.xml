@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=OEVoiture/src&lt;fr.objois.oevehicule{Vehicule.java[Vehicule" modifiers="1" timestamp="1537879851579"/>
+<typeInfo handle="=pizzeria-spring/src\/main\/java&lt;fr.objois.pizzeria.client.business{IClientBusiness.java[IClientBusiness" modifiers="513" timestamp="1542116057657"/>
+<typeInfo handle="=universite/src\/main\/java&lt;fr.objois.universite.enseignant.business{IEnseignantBusiness.java[IEnseignantBusiness" modifiers="513" timestamp="1542210266575"/>
+<typeInfo handle="=universite/src\/main\/java&lt;fr.objois.universite.etudiant.controller{IEtudiantController.java[IEtudiantController" modifiers="513" timestamp="1542270070263"/>
+<typeInfo handle="=universite/src\/main\/java&lt;fr.objois.universite.matiere.controller{IMatiereController.java[IMatiereController" modifiers="513" timestamp="1542276325999"/>
 </typeInfoHistroy>
