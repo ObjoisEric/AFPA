@@ -8,12 +8,16 @@ import org.springframework.stereotype.Service;
 import fr.objois.universite.etudiant.business.IEtudiantBusiness;
 import fr.objois.universite.etudiant.domain.Etudiant;
 import fr.objois.universite.etudiant.repository.IEtudiantRepository;
+import fr.objois.universite.note.domain.Note;
+import fr.objois.universite.note.repository.INoteRepository;
 
 @Service
 public class EtudiantBusinessImpl implements IEtudiantBusiness{
 	
 	@Autowired
 	IEtudiantRepository etudiantRepository;
+	@Autowired
+	INoteRepository noteRepository;
 
 	@Override
 	public List<Etudiant> getAllEtudiant() {
@@ -43,5 +47,15 @@ public class EtudiantBusinessImpl implements IEtudiantBusiness{
 		
 		etudiantRepository.save(vraiEtudiant);
 	}
+
+	@Override
+	public List<Note> getNoteInfdixEtudiant(Integer id) {		
+		
+		List<Note> NoteInfdixEtudiant = noteRepository.findByEtudiantIdAndNoteLessThan(id, 10.0);
+ 		return NoteInfdixEtudiant;
+	}
+
+
+	
 
 }

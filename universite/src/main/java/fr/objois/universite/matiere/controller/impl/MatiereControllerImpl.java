@@ -1,6 +1,5 @@
 package fr.objois.universite.matiere.controller.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,12 +34,13 @@ public class MatiereControllerImpl implements IMatiereController {
 
 	@Override
 	@RequestMapping("/matiere")
-	public String afficherDetailMatiere(Model model, @RequestParam Integer id) {
+	public String afficherDetailMatiere(Model model, @RequestParam Integer id) {		
 		
-		
-		Matiere detailMatiere = matiereBusiness.getDetailMatiere(id);
-		
+		Matiere detailMatiere = matiereBusiness.getDetailMatiere(id);		
 		model.addAttribute("detailMatiere",detailMatiere);
+		
+		Enseignant listEnseignant = detailMatiere.getEnseignant();
+		model.addAttribute("listEnseignant",listEnseignant);
 		
 		return "matiere/matiere";
 	}
@@ -50,8 +50,8 @@ public class MatiereControllerImpl implements IMatiereController {
 	public String ajouterMatiere(Model model) {
 		Matiere matiere = new Matiere();
 		model.addAttribute("matiere",matiere);
-		List<Enseignant> listeEnseignant = new ArrayList<>();
 		
+		List<Enseignant> listeEnseignant = matiereBusiness.qetAllEnseignant();		
 		model.addAttribute("listeEnseignant",listeEnseignant);
 		
 		return "matiere/ajouterMatiere";
@@ -59,8 +59,11 @@ public class MatiereControllerImpl implements IMatiereController {
 
 	@Override
 	@PostMapping("/ajouterMatiere")
-	public String ajouterMatiere(Model model,@ModelAttribute Matiere matiere) {
-		matiereBusiness.ajouterMatiere(matiere);
+	public String ajouterMatiere(Model model,@ModelAttribute Matiere matiere,@RequestParam Integer idEnseignant) {
+		
+		
+		
+		matiereBusiness.ajouterMatiere(matiere,idEnseignant);
 		return "redirect:/matieres";
 	}
 
@@ -70,8 +73,21 @@ public class MatiereControllerImpl implements IMatiereController {
 		Matiere matiere = matiereBusiness.getDetailMatiere(id);
 		model.addAttribute("matiere",matiere);
 		
+		List<Enseignant> listeEnseignant = matiereBusiness.qetAllEnseignant();		
+		model.addAttribute("listeEnseignant",listeEnseignant);
+		
 		return "matiere/modifierMatiere";
 	}
+
+	@Override
+	@PostMapping("/modifierMatiere")
+	public String modifierMatiere(Model model,@ModelAttribute Matiere matiere,@RequestParam Integer idEnseignant) {
+		
+		matiereBusiness.modifierMatiere(matiere, idEnseignant);
+		
+		return "redirect:/matieres";
+	}
+	
 	
 	
 

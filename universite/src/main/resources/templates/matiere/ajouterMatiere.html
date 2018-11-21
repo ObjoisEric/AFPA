@@ -32,17 +32,15 @@
 				<label for="dateFin">date debut : </label>
 				<input type="text" th:field="*{dateFin}" id="dateFin" placeholder="date fin" />
 			</div>
-<!-- 			<div class="blocValeur"> -->
-<!-- 				<label for="idEnseignant">Enseignant : </label> -->
-<!-- 				<select th:name="*{idEnseignant}"> -->
-<!-- 					<option th:each="enseignant = ${listeEnseignant}" -->
-<!-- 							th:value="${enseignant.id}" -->
-<!-- 							th:text="${enseignant.nom}"> -->
-<!-- 					</option> -->
-				
-<!-- 				</select> -->
-<!-- 				<input type="text" th:field="*{dateFin}" id="dateFin" placeholder="date fin" /> -->
-<!-- 			</div> -->
+			<div class="blocValeur">
+				<label for="enseignant">enseignant : </label>
+				<select name="idEnseignant">
+					<option th:each="enseignant : ${listeEnseignant}"
+							th:value="${enseignant.id}"
+							th:text="${enseignant.nom + ' ' + enseignant.prenom}">
+					</option>				
+				</select>
+			</div>
 			
 			
 			

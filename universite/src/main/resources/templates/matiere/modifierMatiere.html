@@ -26,25 +26,30 @@
 			</div>
 			<div class="blocValeur">
 				<label for="dateDebut">date debut : </label>
-				<input type="text" th:field="*{dateDebut}" id="dateDebut" placeholder="date Debut" />
+				<input type="date" th:field="*{dateDebut}" id="dateDebut" 
+					   placeholder="date Debut" th:value="${#dates.format(matiere.dateDebut, 'dd/MM/yyyy')}"/>
 			</div>
 			<div class="blocValeur">
 				<label for="dateFin">date debut : </label>
-				<input type="text" th:field="*{dateFin}" id="dateFin" placeholder="date fin" />
+				<input type="date" th:field="*{dateFin}" id="dateFin" 
+					   placeholder="date fin" th:value="${#dates.format(matiere.dateFin, 'dd/MM/yyyy')}"/>
 			</div>
-<!-- 			<div class="blocValeur"> -->
-<!-- 				<label for="idEnseignant">Enseignant : </label> -->
-<!-- 				<select th:name="*{idEnseignant}"> -->
-<!-- 					<option th:each="enseignant = ${listeEnseignant}" -->
-<!-- 							th:value="${enseignant.id}" -->
-<!-- 							th:text="${enseignant.nom}"> -->
-<!-- 					</option>				 -->
-<!-- 				</select> -->
-<!-- 				<input type="text" th:field="*{dateFin}" id="dateFin" placeholder="date fin" /> -->
-<!-- 			</div>	 -->
+			<div class="blocValeur">
+				<label for="enseignant">enseignant : </label>
+				<select name="idEnseignant">
+					<option th:each="enseignant : ${listeEnseignant}"
+							th:value="${enseignant.id}"
+							th:text="${enseignant.nom + ' ' + enseignant.prenom}"							
+							th:selected="${enseignant.id == matiere.enseignant.id } ? 'selected'">
+					</option>				
+				</select>
+			</div>
+			<div class="blocValeur">				
+				<input type="text" th:field="*{id}" id="id" hidden="hidden"/>				
+			</div>
 			
 			
-			<br /> <input type="submit" value="Ajouter" class="lien" />
+			<br /> <input type="submit" value="Modifier" class="lien" />
 		</form>
 	</div>
 

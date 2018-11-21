@@ -1,44 +1,50 @@
 package fr.objois.universite.matiere.domain;
 
+import java.util.Date;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import fr.objois.universite.enseignant.domain.Enseignant;
+import fr.objois.universite.note.domain.Note;
 
 @Entity(name="t_matiere")
 public class Matiere {
 	@Column(name="id")
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	Integer id;
+	private Integer id;
 	@Column(name="numero_matiere")
-	Integer numeroMatiere;
+	private Integer numeroMatiere;
 	@Column(name="nom")
-	String nom;
+	private String nom;
 	@Column(name="coef")
-	Integer coef;
+	private Integer coef;
 	@Column(name="date_debut")
-	String dateDebut;
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	private Date dateDebut;
 	@Column(name="date_fin")
-	String dateFin;
-	@Column(name="id_enseignant")
-	Integer idEnseignant;
-	public Matiere() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Matiere(Integer id, Integer numeroMatiere, String nom, Integer coef, String dateDebut, String dateFin,
-			Integer idEnseignant) {
-		super();
-		this.id = id;
-		this.numeroMatiere = numeroMatiere;
-		this.nom = nom;
-		this.coef = coef;
-		this.dateDebut = dateDebut;
-		this.dateFin = dateFin;
-		this.idEnseignant = idEnseignant;
-	}
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	private Date dateFin;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="id_enseignant")
+	private Enseignant enseignant;
+	
+	@OneToMany(mappedBy="matiere")
+	private List<Note> notes;
+
+
 	public Integer getId() {
 		return id;
 	}
@@ -63,23 +69,29 @@ public class Matiere {
 	public void setCoef(Integer coef) {
 		this.coef = coef;
 	}
-	public String getDateDebut() {
+	public Date getDateDebut() {
 		return dateDebut;
 	}
-	public void setDateDebut(String dateDebut) {
+	public void setDateDebut(Date dateDebut) {
 		this.dateDebut = dateDebut;
 	}
-	public String getDateFin() {
+	public Date getDateFin() {
 		return dateFin;
 	}
-	public void setDateFin(String dateFin) {
+	public void setDateFin(Date dateFin) {
 		this.dateFin = dateFin;
 	}
-	public Integer getIdEnseignant() {
-		return idEnseignant;
+	public Enseignant getEnseignant() {
+		return enseignant;
 	}
-	public void setIdEnseignant(Integer idEnseignant) {
-		this.idEnseignant = idEnseignant;
+	public void setEnseignant(Enseignant enseignant) {
+		this.enseignant = enseignant;
+	}
+	public List<Note> getNotes() {
+		return notes;
+	}
+	public void setNotes(List<Note> notes) {
+		this.notes = notes;
 	}
 	
 	

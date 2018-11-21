@@ -3,6 +3,8 @@ body,html{
 	
 	margin : 0;
 	size:100%;
+	font-size: 32px;
+	background: #C8CDC8;
 }
 tr,th,td,table{
 	border: blue 2px solid;

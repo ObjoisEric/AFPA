@@ -1,10 +1,18 @@
 package fr.objois.universite.etudiant.domain;
 
+import java.util.Date;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import fr.objois.universite.note.domain.Note;
 
 @Entity(name="t_etudiant")
 public class Etudiant {
@@ -19,23 +27,14 @@ public class Etudiant {
 	@Column(name="prenom")
 	String prenom;
 	@Column(name="date_naissance")
-	String dateNaissance;
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	Date dateNaissance;
 	@Column(name="sexe")
 	String sexe;
-	public Etudiant() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Etudiant(Integer id, Integer numeroEtudiant, String nom, String prenom, String dateNaissance,
-			String sexe) {
-		super();
-		this.id = id;
-		this.numeroEtudiant = numeroEtudiant;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.dateNaissance = dateNaissance;
-		this.sexe = sexe;
-	}
+	
+	@OneToMany(mappedBy="etudiant")
+	private List<Note> notes;
+
 	public Integer getId() {
 		return id;
 	}
@@ -60,10 +59,10 @@ public class Etudiant {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	public String getDateNaissance() {
+	public Date getDateNaissance() {
 		return dateNaissance;
 	}
-	public void setDateNaissance(String dateNaissance) {
+	public void setDateNaissance(Date dateNaissance) {
 		this.dateNaissance = dateNaissance;
 	}
 	public String getSexe() {
@@ -71,6 +70,12 @@ public class Etudiant {
 	}
 	public void setSexe(String sexe) {
 		this.sexe = sexe;
+	}
+	public List<Note> getNotes() {
+		return notes;
+	}
+	public void setNotes(List<Note> notes) {
+		this.notes = notes;
 	}
 	
 	

@@ -26,8 +26,8 @@
 			</div>
 			<div class="blocValeur">
 				<label for="dateNaissance">date de naissance : </label> <input
-					type="text" th:field="*{dateNaissance}" id="dateNaissance"
-					name="dateNaissance" placeholder="date naissance" />
+					type="date" th:value="${#dates.format(enseignant.dateNaissance, 'dd/MM/yyyy')}" th:field="*{dateNaissance}" id="dateNaissance"
+					placeholder="date naissance"  />
 			</div>
 			<div class="blocValeur">
 				<label for="sexe">sexe : </label> <input type="radio"
@@ -39,9 +39,9 @@
 					th:field="*{grade}" id="grade" placeholder="grade" />
 			</div>
 			<div class="blocValeur">
-				<label for="dateEmbauche">date embauche :</label> <input type="text"
-					th:field="*{dateEmbauche}" id="dateEmbauche"
-					placeholder="date embauche" />
+				<label for="dateEmbauche">date embauche :</label> 
+				<input type="date" th:field="*{dateEmbauche}" id="dateEmbauche"
+					placeholder="date embauche" th:value="${#dates.format(enseignant.dateEmbauche, 'dd/MM/yyyy')}"/>
 			</div>
 			<div class="blocValeur">
 				<input type="text" th:field="*{id}" id="id" placeholder="id" hidden="hidden" />

@@ -12,8 +12,10 @@ public interface IMatiereController {
 	
 	public String ajouterMatiere(Model model);
 	
-	public String ajouterMatiere(Model model, Matiere matiere);
+	public String ajouterMatiere(Model model, Matiere matiere, Integer idEnseignant);
 	
 	public String modificationMatiere(Model model, Integer id);
+	
+	public String modifierMatiere(Model model, Matiere matiere, Integer idEnseignant);
 
 }

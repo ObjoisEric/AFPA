@@ -16,13 +16,15 @@
 				<th>coef</th>
 				<th>date debut</th>
 				<th>date fin</th>
+				<th>nom enseignant</th>
 			</tr>
 			<tr th:each="matiere,i : ${listeMatiere}" th:class="${i.index % 2 == 0 } ? 'alpha' : 'beta' ">
 				<td th:text="${matiere.numeroMatiere}"></td>
 				<td th:text="${matiere.nom}"></td>
 				<td th:text="${matiere.coef}"></td>
-				<td th:text="${matiere.dateDebut}"></td>
-				<td th:text="${matiere.dateFin}"></td>
+				<td th:text="${#dates.format(matiere.dateDebut, 'yyyy/MM/dd')}"></td>
+				<td th:text="${#dates.format(matiere.dateFin, 'yyyy/MM/dd')}"></td>
+				<td th:text="${matiere.enseignant.nom}"></td> 
 				<td><a th:href="@{matiere(id=${matiere.id})}">detail</a></td>
 				<td><a th:href="@{modifierMatiere(id=${matiere.id})}">modifier</a></td>
 			</tr>

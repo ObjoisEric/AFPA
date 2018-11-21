@@ -4,5 +4,6 @@
 <typeInfo handle="=pizzeria-spring/src\/main\/java&lt;fr.objois.pizzeria.client.business{IClientBusiness.java[IClientBusiness" modifiers="513" timestamp="1542116057657"/>
 <typeInfo handle="=universite/src\/main\/java&lt;fr.objois.universite.enseignant.business{IEnseignantBusiness.java[IEnseignantBusiness" modifiers="513" timestamp="1542210266575"/>
 <typeInfo handle="=universite/src\/main\/java&lt;fr.objois.universite.etudiant.controller{IEtudiantController.java[IEtudiantController" modifiers="513" timestamp="1542270070263"/>
-<typeInfo handle="=universite/src\/main\/java&lt;fr.objois.universite.matiere.controller{IMatiereController.java[IMatiereController" modifiers="513" timestamp="1542276325999"/>
+<typeInfo handle="=universite/src\/main\/java&lt;fr.objois.universite.matiere.controller{IMatiereController.java[IMatiereController" modifiers="513" timestamp="1542626325589"/>
+<typeInfo handle="=universite/src\/main\/java&lt;fr.objois.universite.note.controller{INoteController.java[INoteController" modifiers="513" timestamp="1542638663617"/>
 </typeInfoHistroy>

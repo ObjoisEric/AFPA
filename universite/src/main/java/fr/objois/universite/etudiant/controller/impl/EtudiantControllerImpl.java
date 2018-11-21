@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import fr.objois.universite.etudiant.business.IEtudiantBusiness;
 import fr.objois.universite.etudiant.controller.IEtudiantController;
 import fr.objois.universite.etudiant.domain.Etudiant;
+import fr.objois.universite.note.domain.Note;
 
 
 @Controller
@@ -38,6 +39,11 @@ public class EtudiantControllerImpl implements IEtudiantController {
 	public String afficherDetailEtudiant(Model model,@RequestParam Integer id) {
 		Etudiant detailEtudiant = etudiantBusiness.getDetailEtudiant(id);
 		model.addAttribute("detailEtudiant",detailEtudiant);
+		
+		List<Note> noteInfdixEtudiant = etudiantBusiness.getNoteInfdixEtudiant(id);
+		
+		model.addAttribute("noteInfdixEtudiant",noteInfdixEtudiant);
+		
 		return "etudiant/etudiant";
 	}
 

@@ -1,10 +1,18 @@
 package fr.objois.universite.enseignant.domain;
 
+import java.util.Date;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import fr.objois.universite.matiere.domain.Matiere;
 
 @Entity(name="t_enseignant")
 public class Enseignant {
@@ -12,38 +20,30 @@ public class Enseignant {
 	@Column(name="id")
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	Integer id;
+	private Integer id;
 	@Column(name="Numero_Enseignant")
-	Integer numeroEnseignant;
+	private Integer numeroEnseignant;
 	@Column(name="Nom")
-	String nom;
+	private String nom;
 	@Column(name="Prenom")
-	String prenom;
+	private String prenom;
 	@Column(name="Date_Naissance")
-	String dateNaissance;
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	private Date dateNaissance;
 	@Column(name="Sexe")
-	String sexe;
+	private String sexe;
 	@Column(name="Grade")
-	String grade;
+	private String grade;
 	@Column(name="Date_Embauche")
-	String dateEmbauche;
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	private Date dateEmbauche;
+	@OneToMany(mappedBy="enseignant")
+	private List<Matiere> listMatieres;
 	
-	public Enseignant() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Enseignant(Integer id, Integer numeroEnseignant, String nom, String prenom, String dateNaissance,
-			String sexe, String grade, String dateEmbauche) {
-		super();
-		this.id = id;
-		this.numeroEnseignant = numeroEnseignant;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.dateNaissance = dateNaissance;
-		this.sexe = sexe;
-		this.grade = grade;
-		this.dateEmbauche = dateEmbauche;
-	}
+	
+	
+	
+
 	public Integer getId() {
 		return id;
 	}
@@ -68,10 +68,10 @@ public class Enseignant {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	public String getDateNaissance() {
+	public Date getDateNaissance() {
 		return dateNaissance;
 	}
-	public void setDateNaissance(String dateNaissance) {
+	public void setDateNaissance(Date dateNaissance) {
 		this.dateNaissance = dateNaissance;
 	}
 	public String getSexe() {
@@ -86,11 +86,17 @@ public class Enseignant {
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-	public String getDateEmbauche() {
+	public Date getDateEmbauche() {
 		return dateEmbauche;
 	}
-	public void setDateEmbauche(String dateEmbauche) {
+	public void setDateEmbauche(Date dateEmbauche) {
 		this.dateEmbauche = dateEmbauche;
+	}
+	public List<Matiere> getListMatieres() {
+		return listMatieres;
+	}
+	public void setListMatieres(List<Matiere> listMatieres) {
+		this.listMatieres = listMatieres;
 	}
 	
 	

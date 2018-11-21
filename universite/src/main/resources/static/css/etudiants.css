@@ -3,6 +3,8 @@ body,html{
 	
 	margin : 0;
 	size:100%;
+	font-size: 32px;
+	background: #C8CDC8;
 }
 tr,th,td,table{
 	border: green 2px solid;
@@ -32,6 +34,15 @@ tr,th,td,table{
 	background: #CFF2CC; 	
 }
 .beta{	
-	background: #558F50; 	
+	background: #558F50;
+}
 
+h1{
+	text-align: center;
+}
+
+.unorderedList{
+	
+	width: fit-content;
+	margin: auto;
 }

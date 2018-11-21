@@ -26,8 +26,8 @@
 			</div>
 			<div class="blocValeur">
 				<label for="dateNaissance">date de naissance : </label> <input
-					type="text" th:field="*{dateNaissance}" id="dateNaissance"
-					placeholder="date naissance" />
+					type="date" th:field="*{dateNaissance}" id="dateNaissance"
+					placeholder="date naissance" th:value="${#dates.format(etudiant.dateNaissance, 'dd/MM/yyyy')}"/>
 			</div>
 			<div class="blocValeur">
 				<label for="sexe">sexe : </label> 

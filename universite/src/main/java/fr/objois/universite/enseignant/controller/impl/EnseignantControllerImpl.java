@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import fr.objois.universite.enseignant.business.IEnseignantBusiness;
 import fr.objois.universite.enseignant.controller.IEnseignantController;
 import fr.objois.universite.enseignant.domain.Enseignant;
+import fr.objois.universite.matiere.domain.Matiere;
 
 @Controller
 public class EnseignantControllerImpl implements IEnseignantController{
@@ -34,9 +35,11 @@ public class EnseignantControllerImpl implements IEnseignantController{
 	@RequestMapping("/enseignant")
 	public String afficherDetailEnseignant(Model model, @RequestParam Integer id) {
 		
-		
 		Enseignant enseignantDetail = enseignantBusiness.getEnseignantDetail(id);
 		model.addAttribute("enseignantDetail",enseignantDetail);
+		
+		List<Matiere> listMatiere = enseignantDetail.getListMatieres();
+		model.addAttribute("listMatiere",listMatiere);
 		return "enseignant/enseignant";
 	}
 
